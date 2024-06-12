@@ -1,44 +1,98 @@
-
-.nav {
-	font-family: 'Roboto', sans-serif;
-	text-align: center;
-	font-weight: 500;
-	color: #ffffff;
-	padding: 15px;
+header {
+	background: #0A1589;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
 }
 
 body {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 }
 
-html {
-	background-image: url("img/background.png");
-	background-size: cover;
-	margin: 0;
-	padding: 0;
+nav {
+	display: flex;
+	gap: 155px;
 }
 
-.nav li {
-	display: inline-block;
-	list-style: outside none none;
-	margin: 0 1.5em;
-	overflow: hidden;
+nav>li {
+	display: flex;
+	align-items: center;
+	gap: 9px;
 }
 
-ul {
-	background-color: #0A1589;
-	margin: 0;
+.svg {
+	fill: white;
 }
 
-.svgNavBar {
-	filter: invert(100%) sepia(8%) saturate(33%) hue-rotate(297deg) brightness(106%) contrast(107%);
+#svg-social {
+	height: 51px;
+	width: 51px;
 }
 
+#svg-help {
+	width: 50px;
+	height: 53.333px;
+}
 
-#triangle-bottomleft {
-	width: 0;
-	height: 0;
-	border-bottom: 100px solid red;
-	border-right: 100px solid transparent;
-  }
+#svg-partnership {
+	width: 70px;
+	height: 42.015px;
+}
+
+#svg-social {
+	height: 51px;
+	width: 51px;
+}
+
+#svg-shop {
+	height: 50px;
+	width: 50px;
+}
+
+p {
+	font-family: "Inter";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%;
+	letter-spacing: -0.2px;
+}
+
+header>nav>li>p {
+	color: white;
+}
+
+#connection {
+	display: inline-flex;
+	align-items: center;
+	padding: 15px 25px;
+	background: #0A438A;
+}
+
+#connection>p {
+	color: white;
+}
+
+#content {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+}
+
+#us,
+#whatIsOeil {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#us>p,
+#whatIsOeil>p {
+	text-align: center;
+}
+
+/*#background {
+	z-index: 0;
+	display: inline;
+}*/
