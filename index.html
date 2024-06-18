@@ -14,8 +14,9 @@
 </head>
 
 <body>
+	<script src="script.js"></script>
 	<header>
-		<svg xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 64 60" fill="none">
+		<svg id="menu" xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 64 60" fill="none">
 			<path
 				d="M53.4667 25.3333H10.5334C9.13427 25.3333 8.00006 26.4676 8.00006 27.8667V28.1333C8.00006 29.5325 9.13427 30.6667 10.5334 30.6667H53.4667C54.8659 30.6667 56.0001 29.5325 56.0001 28.1333V27.8667C56.0001 26.4676 54.8659 25.3333 53.4667 25.3333Z"
 				fill="white" />
@@ -73,10 +74,19 @@
 				</li>
 			</a>
 		</nav>
-		<a href="https://github.com/FartMapHQ">
+		<a onclick="connect('Yaniss', 'Lasbordes', 'G2A', 'A1' )" href="javascript:void(0)">
 			<div id="connection">
-				<p>Connexion</p>
+				<p hidden>Connexion</p>
+				<div id="identity">
+					<div>
+						<p>Yaniss</p>
+						<p>Lasbordes</p>
+						<p>A1 - G2A</p>
+					</div>
+					<img src="img/sbcf-default-avatar.webp" id="avatar">
+				</div>
 			</div>
+
 		</a>
 	</header>
 
