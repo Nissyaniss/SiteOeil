@@ -1,0 +1,12 @@
+[
+	{
+		"name": "test1",
+		"date": "15/20/2024",
+		"place": "Av. Gustave Eiffel1"
+	},
+	{
+		"name": "test2",
+		"date": "15/20/024",
+		"place": "Av. Gustave Eiffel2"
+	}
+]
