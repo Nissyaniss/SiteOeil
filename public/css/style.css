@@ -132,7 +132,7 @@ table {
 /*============ CSS RESET ============*/
 
 html {
-	background-image: url("img/background.png");
+	background-image: url("/img/background.png");
 	background-repeat: no-repeat;
 	height: 100%;
 	width: 100%;
