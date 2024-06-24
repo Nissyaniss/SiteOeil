@@ -1,12 +1,14 @@
 [
 	{
 		"name": "test1",
+		"description": "Une description plus simple que jamais1",
 		"date": "15/20/2024",
 		"place": "Av. Gustave Eiffel1"
 	},
 	{
 		"name": "test2",
-		"date": "15/20/024",
+		"description": "Une description plus simple que jamais2",
+		"date": "15/20/1024",
 		"place": "Av. Gustave Eiffel2"
 	}
 ]
