@@ -286,12 +286,17 @@ a:active {
 	border: 10px solid #000;
 	align-items: center;
 	width: 250px;
+	background-color: white;
 }
 
 .position {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+}
+
+.description {
+	text-align: center;
 }
 
 footer {
