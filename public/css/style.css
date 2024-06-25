@@ -277,7 +277,6 @@ body::after {
 	content: '';
 	display: block;
 	height: 50px;
-	/* Set same as footer's height */
 }
 
 footer {
