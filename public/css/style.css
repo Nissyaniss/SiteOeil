@@ -141,11 +141,6 @@ html {
 	background-attachment: fixed;
 }
 
-body {
-	margin: 0;
-	min-height: 100vh;
-}
-
 header {
 	background: #0A1589;
 	height: 60px;
@@ -266,4 +261,27 @@ footer {
 
 #iutLogo {
 	margin-bottom: 25px;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	position: relative;
+}
+
+body {
+	position: relative;
+}
+
+body::after {
+	content: '';
+	display: block;
+	height: 50px;
+	/* Set same as footer's height */
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
