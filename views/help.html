@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Iut Info</title>
+	<title>Aide</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
-	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/css/help.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -74,124 +74,60 @@
 				</li>
 			</a>
 		</nav>
-		<a>
+		<a href="">
 			<div id="connection">
-				<p id="connection-text">Connexion</p>
-				<div id="identity">
-					<div hidden>
-						<p id="identity-firstName"></p>
-						<p id="identity-lastName"></p>
-						<p id="identity-yearGroup"></p>
-					</div>
-					<img hidden src="img/sbcf-default-avatar.webp" id="avatar">
-				</div>
+				<p>Connexion</p>
 			</div>
-
 		</a>
 	</header>
 
-	<div>
-		<div id="content">
-			<div id="events">
-				<p>Agenda</p>
-				<svg xmlns="http://www.w3.org/2000/svg" width="75" height="6" viewBox="0 0 75 6" fill="none">
+	<div id="help">
+		<h1>Aide</h1>
+		<svg xmlns="http://www.w3.org/2000/svg" width="105" height="6" viewBox="0 0 105 6" fill="none">
+			<path
+				d="M0 3C0 1.34315 1.34315 0 3 0H102C103.657 0 105 1.34315 105 3V3C105 4.65685 103.657 6 102 6H3C1.34315 6 0 4.65685 0 3V3Z"
+				fill="#09438A" />
+		</svg>
+		<div id="faq">
+			<h2>FAQ</h2>
+			<svg xmlns="http://www.w3.org/2000/svg" width="70" height="6" viewBox="0 0 70 6" fill="none">
+				<path
+					d="M0 3C0 1.34315 1.34315 0 3 0H67C68.6569 0 70 1.34315 70 3V3C70 4.65685 68.6569 6 67 6H3C1.34315 6 0 4.65685 0 3V3Z"
+					fill="#09438A" />
+			</svg>
+			<div class="question_response">
+				<h3 class="question">Question :</h3><svg xmlns="http://www.w3.org/2000/svg" width="155" height="6"
+					viewBox="0 0 155 6" fill="none">
 					<path
-						d="M0 3C0 1.34315 1.34315 0 3 0H72C73.6569 0 75 1.34315 75 3C75 4.65685 73.6569 6 72 6H3C1.34315 6 0 4.65685 0 3Z"
+						d="M0 3C0 1.34315 1.34315 0 3 0H152C153.657 0 155 1.34315 155 3V3C155 4.65685 153.657 6 152 6H3C1.34314 6 0 4.65685 0 3V3Z"
 						fill="#09438A" />
 				</svg>
-
-
-				<% events.forEach(function(event) { %>
-
-
-				<div class="event">
-					<p><%= event.name %></p>
-					<p><%= event.date %></p>
-					<p class="description" ><%= event.description %></p>
-					<div class="position">
-						<svg xmlns="http://www.w3.org/2000/svg" width="69" height="66" viewBox="0 0 69 66" fill="none">
-							<path
-								d="M34.5 38.5C40.8423 38.5 46 33.5665 46 27.5C46 21.4335 40.8423 16.5 34.5 16.5C28.1577 16.5 23 21.4335 23 27.5C23 33.5665 28.1577 38.5 34.5 38.5ZM34.5 22C37.6711 22 40.25 24.4667 40.25 27.5C40.25 30.5332 37.6711 33 34.5 33C31.3289 33 28.75 30.5332 28.75 27.5C28.75 24.4667 31.3289 22 34.5 22Z"
-								fill="#FF0000" />
-							<path
-								d="M32.8325 59.9885C33.3191 60.3209 33.9021 60.4996 34.5 60.4996C35.0979 60.4996 35.6809 60.3209 36.1675 59.9885C37.0415 59.3972 57.5834 45.21 57.5 27.5C57.5 15.3698 47.1816 5.5 34.5 5.5C21.8184 5.5 11.5 15.3697 11.5 27.4862C11.4166 45.21 31.9585 59.3972 32.8325 59.9885ZM34.5 11C44.0134 11 51.75 18.4003 51.75 27.5138C51.8104 39.7183 39.1345 50.677 34.5 54.2713C29.8684 50.6743 17.1896 39.7127 17.25 27.5C17.25 18.4002 24.9866 11 34.5 11Z"
-								fill="#FF0000" />
-						</svg>
-						<p><%= event.place %></p>
-					</div>
-				</div>
-				
-				<% }); %>
-
-
-
-
+				<p class="response">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
-			<div>
-				<div id="us">
-					<p>Qui sommes nous ?</p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="175" height="6" viewBox="0 0 175 6" fill="none">
-						<path
-							d="M0 3C0 1.34315 1.34315 0 3 0H172C173.657 0 175 1.34315 175 3C175 4.65685 173.657 6 172 6H3C1.34314 6 0 4.65685 0 3Z"
-							fill="#09438A" />
-					</svg>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-						molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-						numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-						optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-						obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-						nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-						tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-						quia. Quo neque error repudiandae fuga?</p>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-						molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-						numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-						optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-						obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-						nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-						tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-						quia. Quo neque error repudiandae fuga?</p>
-				</div>
-				<div id="whatIsOeil">
-					<p>C'est quoi l'OEIL ?</p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="175" height="6" viewBox="0 0 175 6" fill="none">
-						<path
-							d="M0 3C0 1.34315 1.34315 0 3 0H172C173.657 0 175 1.34315 175 3C175 4.65685 173.657 6 172 6H3C1.34314 6 0 4.65685 0 3Z"
-							fill="#09438A" />
-					</svg>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-						molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-						numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-						optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-						obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-						nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-						tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-						quia. Quo neque error repudiandae fuga?</p>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-						molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-						numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-						optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-						obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-						nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-						tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-						quia. Quo neque error repudiandae fuga?</p>
-				</div>
+			<div class="question_response">
+				<h3 class="question">Question :</h3><svg xmlns="http://www.w3.org/2000/svg" width="155" height="6"
+					viewBox="0 0 155 6" fill="none">
+					<path
+						d="M0 3C0 1.34315 1.34315 0 3 0H152C153.657 0 155 1.34315 155 3V3C155 4.65685 153.657 6 152 6H3C1.34314 6 0 4.65685 0 3V3Z"
+						fill="#09438A" />
+				</svg>
+				<p class="response">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-				molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-				numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-				optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-				obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-				nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-				tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-				quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
-				sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-				recusandae alias error harum maxime adipisci amet laborum. Perspiciatis
-				minima nesciunt dolorem!</p>
-
-
 		</div>
+		<h1 id="more_help">Si vous avez d'autres question n'hesité pas à nous contacter sur discord via le logo en bas
+			de la page</h1>
 	</div>
+
 	<footer>
 		<a href="https://discord.gg/erMgHR3gH6" target="_blank">
 			<svg xmlns="http://www.w3.org/2000/svg" width="71" height="55" viewBox="0 0 71 55" fill="none">

@@ -37,5 +37,9 @@ app.get("/", async (req, res) => {
 	res.render("index.ejs", { events });
 })
 
+app.get("/help", function (req, res) {
+	res.sendFile(path.join(__dirname, "../views/help.html"));
+});
+
 // launch on https://localhost:9000
 app.listen(9000);

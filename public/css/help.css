@@ -1,0 +1,33 @@
+#help {
+	padding-left: 287px;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+#faq {
+	padding-left: 105px;
+}
+
+.question_response {
+	padding-left: 70px;
+}
+
+.response {
+	padding-left: 77px;
+	padding-right: 150px;
+}
+
+#more_help {
+	text-align: center;
+	padding-right: 150px;
+}
