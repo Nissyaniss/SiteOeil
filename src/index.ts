@@ -41,5 +41,9 @@ app.get("/help", function (req, res) {
 	res.sendFile(path.join(__dirname, "../views/help.html"));
 });
 
+app.get("/partnership", function (req, res) {
+	res.sendFile(path.join(__dirname, "../views/partnership.html"));
+});
+
 // launch on https://localhost:9000
 app.listen(9000);
