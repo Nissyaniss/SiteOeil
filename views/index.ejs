@@ -75,16 +75,20 @@
 			</a>
 		</nav>
 		<a>
-			<div id="connection">
-				<p id="connection-text">Connexion</p>
-				<div id="identity">
-					<div hidden>
-						<p id="identity-firstName"></p>
-						<p id="identity-lastName"></p>
-						<p id="identity-yearGroup"></p>
+			<% if(isLoggedIn === "true"){ %>
+				<div id="connection" style="padding-bottom: 5px; padding-top: 5px;">
+					<div id="identity">
+						<div>
+							<p id="identity-firstName"><%= firstName %></p>
+							<p id="identity-lastName"><%= lastName %></p>
+							<p id="identity-yearGroup"><%= yearGroup %></p>
+						</div>
+						<img src="<%= profilePicture %>" id="avatar">
 					</div>
-					<img hidden src="img/sbcf-default-avatar.webp" id="avatar">
-				</div>
+				<% } else { %>
+				<div id="connection">
+					<p id="connection-text">Connexion</p>
+				<% } %>
 			</div>
 
 		</a>
