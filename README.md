@@ -14,7 +14,7 @@ cd SiteOeil
 Avec npm d'installé (via https://nodejs.org/en/download/package-manager pour l'installation par distro) faite :
 
 ```shell
-npm i tsx
+npm i
 npm run dev
 ```
 

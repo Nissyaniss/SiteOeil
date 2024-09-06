@@ -75,7 +75,7 @@
 			</a>
 		</nav>
 		<a>
-			<% if(isLoggedIn === "true"){ %>
+			<% if (isLoggedIn){ %>
 				<div id="connection" style="padding-bottom: 5px; padding-top: 5px;">
 					<div id="identity">
 						<div>
@@ -83,7 +83,7 @@
 							<p id="identity-lastName"><%= lastName %></p>
 							<p id="identity-yearGroup"><%= yearGroup %></p>
 						</div>
-						<img src="<%= profilePicture %>" id="avatar">
+						<img id="avatar">
 					</div>
 				<% } else { %>
 				<div id="connection" href="login">
@@ -235,6 +235,12 @@
 			</svg>
 		</a>
 	</footer>
+	<script>
+		const avatar = document.getElementById('avatar');
+		if (avatar) {
+			avatar.src = localStorage.getItem('profilePicture');
+		}
+	</script>
 </body>
 
 </html>
